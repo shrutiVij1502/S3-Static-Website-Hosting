@@ -1,4 +1,4 @@
-# POC-2 (Configure a static website using s3)
+# POC-2 (Configure a Static website using S3)
 ### Create an S3 bucket.
 ### Upload some static files which contain a sample website.
 ### Configure S3 as a host to serve those files as a site.
