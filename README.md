@@ -19,6 +19,8 @@ Note - While uploading make sure to enable the public access mode
 
 Next, go into the bucket permissions -> Bucket policy -> put the code of Grant Read Only Permission to anonymous user into the bucket policy 
 
+![image](https://user-images.githubusercontent.com/67600604/171576125-5de33b3d-93b7-488f-b904-ebb092af961d.png)
+
 Open the Route53 Services of AWS -> DNS Management -> Create a hosted Zone of same as the domain name
 
 Now, create the record set into the bucket -> Enable the Alias Mode -> set the Bucket name having your website File and Save.
