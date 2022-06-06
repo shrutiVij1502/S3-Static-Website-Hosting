@@ -38,3 +38,7 @@ Finally check your URL on browser , it is showing the lock(e.g. shruti2.tk)
 
 ![image](https://user-images.githubusercontent.com/67600604/172104903-b66c006b-cda0-481a-816a-cfb128818c4c.png)
 
+![image](https://user-images.githubusercontent.com/67600604/172105634-316fa580-f496-432c-97e1-689104c0239d.png)
+
+Certificate is issued by amazon
+
