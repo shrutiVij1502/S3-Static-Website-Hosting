@@ -5,11 +5,11 @@
 
 **Step1 : Create an S3 Bucket** 
 
-![image](https://user-images.githubusercontent.com/67600604/171572497-e6fb7bb7-52b8-47c1-8533-ead257cdcf1b.png)
+![image](https://user-images.githubusercontent.com/67600604/172104017-9147465d-e2b0-4bce-a180-d75eaa7f19ae.png)
 
-to host the website, a prerequisite is to have a domain and for this, we have to pick a name. In our case, we pick a name from freenom.com and you have to name your bucket as of your domain name
+To host the website, a prerequisite is to have a domain and for this, we have to pick a name. In our case, we pick a name from freenom.com and you have to name your bucket as of your domain name
 
-Here, i have created a bucket named as www.shruti1.ga as i had the domain as shruti1.ga
+Here, i have created a bucket named as shruti12.tk as i had the domain as shruti2.tk
 
 **Step2 : Upload some static files which contain a sample website** - Upload the html file named as index.html in your bucket and all Related image and stuff in the named folder.
 
@@ -19,12 +19,22 @@ Note - While uploading make sure to enable the public access mode
 
 Next, go into the bucket permissions -> Bucket policy -> put the code of Grant Read Only Permission to anonymous user into the bucket policy 
 
-![image](https://user-images.githubusercontent.com/67600604/171576125-5de33b3d-93b7-488f-b904-ebb092af961d.png)
+![image](https://user-images.githubusercontent.com/67600604/172104172-45546fec-72fd-4f67-90e3-45f9a73ec244.png)
 
-Open the Route53 Services of AWS -> DNS Management -> Create a hosted Zone of same as the domain name
+**Step3 :**  Open the Route53 Services of AWS -> DNS Management -> Create a hosted Zone of same as the domain name
 
-Now, create the record set into the bucket -> Enable the Alias Mode -> set the Bucket name having your website File and Save.
+Now, we will request for the certificate from ACM, go to the console and search for ACM and request a public SSL/TLS certifificate and to validate it, create a record of the certificate in route 53, and it will get issued.
 
-Finally check your URL on browser (e.g. shruti1.ga or wwww.shruti1.ga)
+![image](https://user-images.githubusercontent.com/67600604/172104940-6ebdb262-4f8b-44f7-ae5a-8015a203f1da.png)
 
-![image](https://user-images.githubusercontent.com/67600604/171574154-978f258f-f06f-42de-880b-5472b7fab6d0.png)
+After that, go to the Cloudfront and paste the s3 link in the domain name and enable the option "Redirect to https from http" and in the CNAME, add your domain name, where you want it to get verified.
+
+![image](https://user-images.githubusercontent.com/67600604/172104991-44462f63-93cb-47f7-9224-f5a833710d4e.png)
+
+and now wait for few minutes and search for your URL in the browser
+
+
+Finally check your URL on browser , it is showing the lock(e.g. shruti2.tk)
+
+![image](https://user-images.githubusercontent.com/67600604/172104903-b66c006b-cda0-481a-816a-cfb128818c4c.png)
+
