@@ -9,7 +9,7 @@
 
 To host the website, a prerequisite is to have a domain and for this, we have to pick a name. In our case, we pick a name from freenom.com and you have to name your bucket as of your domain name
 
-Here, i have created a bucket named as shruti12.tk as i had the domain as shruti2.tk
+Here, i have created a bucket named as shruti2.tk as I had the domain as shruti2.tk
 
 **Step2 : Upload some static files which contain a sample website** - Upload the html file named as index.html in your bucket and all Related image and stuff in the named folder.
 
