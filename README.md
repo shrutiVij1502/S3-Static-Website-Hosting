@@ -1,4 +1,4 @@
-# POC-2 (Configure a Static website using S3)
+## Configure a Static website using S3
 ### Create an S3 bucket.
 ### Upload some static files which contain a sample website.
 ### Configure S3 as a host to serve those files as a site.
@@ -42,3 +42,12 @@ Finally check your URL on browser , it is showing the lock(e.g. shruti2.tk)
 
 Certificate is issued by amazon
 
+## Note - when we have to host the static website using s3 with cloudformation and we dont want to make the bucket public, then we have to use this 
+
+![image](https://user-images.githubusercontent.com/67600604/220855624-eab8c86a-5455-48f9-813a-8a1c4964fe33.png)
+
+```
+https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-serve-static-website/
+https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-serve-static-website/
+https://aws.plainenglish.io/hosting-a-static-website-with-s3-cloudfront-7450ba2a203f
+```
